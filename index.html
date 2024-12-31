@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily Goods Calculator</title>
+  <!-- Link to external CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Daily Goods Calculator</h1>
+
+    <!-- Input Section -->
+    <div class="input-section">
+      <label for="priceInput">Enter Price with Quantity:</label>
+      <input type="text" id="priceInput" placeholder="e.g., 1 kg 500 g = 100 or 2 m 50 cm = 250">
+
+      <label for="quantityInput">Enter Quantity to Calculate:</label>
+      <input type="text" id="quantityInput" placeholder="e.g., 250 g or 1 m 50 cm">
+
+      <button onclick="calculatePrice()">Calculate</button>
+    </div>
+
+    <!-- Output Section -->
+    <div class="output-section">
+      <p><strong>Total Price: </strong><span id="totalPrice">0.00</span></p>
+    </div>
+  </div>
+
+  <!-- Link to external JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
